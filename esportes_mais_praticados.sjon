@@ -1,0 +1,14 @@
+{
+  "esportes_praticados_brasil": {
+    "Futebol": 1200,
+    "Vôlei": 800,
+    "Basquete": 600,
+    "Natação": 400,
+    "Ciclismo": 350,
+    "Corrida": 300,
+    "Jiu-Jitsu": 250,
+    "Handebol": 200,
+    "Tênis": 150,
+    "Futsal": 100
+  }
+}
