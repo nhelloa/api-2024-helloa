@@ -1,5 +1,4 @@
 {
-  "esportes_praticados_brasil": {
     "Futebol": 1200,
     "Vôlei": 800,
     "Basquete": 600,
@@ -10,5 +9,4 @@
     "Handebol": 200,
     "Tênis": 150,
     "Futsal": 100
-  }
 }
