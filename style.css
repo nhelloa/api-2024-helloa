@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Sixtyfour+Convergence&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fonte-titulo:"Sixtyfour Convergence", sans-serif;
+    --fonte-texto:"PT Sans", sans-serif;
+    --azul-escuro: #05668dff;
+    --azul-céu: #427aa1ff;
+    --gelo: #ebf2faff;
+    --verde-musgo: #679436ff;
+    --verde-lima: #a5be00ff;
+    --preto: #050505;
+    --vermelho:#ce4242;
+
+}
+body{
+    font-family: var(--fonte-texto);
+    background-color: var(--azul-escuro);
+    color: var(--preto);
+    height: 100vh;
+}
+header{
+    background-color: var(--gelo);
+    text-align: center;
+}
+h1{
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+    padding: 1.2rem 0;
+    color: var(--preto);
+}
+nav{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+nav a{
+    text-decoration: none;
+    color: var(--vermelho);
+    margin: 0 2rem 1rem 0;
+    font-size: 1.5rem;
+}
+nav a:hover{
+    text-decoration: underline;
+    font-size: 1.7rem;
+    color: var(--preto);
+    transition: 0.5s;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--vermelho);
+    color: var(--gelo);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+}
