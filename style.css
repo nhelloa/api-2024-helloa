@@ -16,6 +16,7 @@
     --vermelho:#ce4242;
 
 }
+
 body{
     font-family: var(--fonte-texto);
     background-color: var(--azul-escuro);
@@ -27,7 +28,7 @@ header{
     text-align: center;
 }
 h1{
-    font-family: var(--fonte-titulo);
+    
     font-size: 2rem;
     padding: 1.2rem 0;
     color: var(--preto);
@@ -45,9 +46,8 @@ nav a{
 }
 nav a:hover{
     text-decoration: underline;
-    font-size: 1.7rem;
-    color: var(--preto);
-    transition: 0.5s;
+    transform: scale(0.90);
+    transition: transform 0.3s;
 }
 footer{
     display: flex;
@@ -60,3 +60,21 @@ footer{
     bottom: 0;
     padding: 1rem;
 }
+
+.caixa-grafico{
+        margin: 5rem;
+}
+
+.caixa-grafico_texto{
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 2rem;
+        border: var(--preto) solid 2px;
+}
+
+span{
+    font-weight: bold;
+    color:antiquewhite;
+}
+
+

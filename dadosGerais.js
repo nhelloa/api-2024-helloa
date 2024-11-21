@@ -4,42 +4,35 @@ async function vizualizando(){
     const res = await fetch(url)
     const dados = await res.json()
 
-    console.log(dados)  
-    const cursos = Object.keys(dados)
+     
+    const esportes = Object.keys(dados)
     const votos = Object.values(dados)
-    const esporteMaisVotado = cursos[0]
+    const esporteMaisVotado = esportes[0]
     const quantidadeDeVoto = Object.values(dados) [0]
+
 
     const data = [
         {
-            x:esporteMaisVotado,
+            x:esportes,
             y:votos,
             type: 'bar'
         }
     ]
 
 
-
-
-
-
     let paragrafo = document.createElement('p')
 
     paragrafo.classList.add('caixa-grafico_texto')
 
-    paragrafo.innerHTML = `Nesta pesquisa, buscou-se compreender qual o esporte mais praticado pela população brasileira. 0 ${esporteMaisVotado} foi o esporte mais votado entre todos, com um total de ${quantidaDedeVotos} votos, em uma pesquisa que teve um total de um milhão de participantes.`
+    paragrafo.innerHTML = `Nesta pesquisa, buscou-se compreender qual o esporte mais praticado pela população brasileira. 0 ${esporteMaisVotado} foi o esporte mais votado entre todos, com um total de ${quantidadeDeVoto} votos, em uma pesquisa que teve um total de 4350 participantes.`
 
     let caixa = document.getElementById('caixa-grafico')
     caixa.appendChild(paragrafo)
 
-
-    console.log(cursoMaisVotado)
-    console.log(quantidadeDeVoto)
-
     const grafico = document.createElement('div')
     grafico.className = 'grafico'
     document.getElementById('caixa-grafico').appendChild(grafico)
-    plotly.newPlotly(grafico, data)
+    Plotly.newPlot(grafico, data)
 }
 
 vizualizando()
